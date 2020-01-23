@@ -26,31 +26,22 @@ O que é preciso saber antes de responder o desafio.
 
 ### Como calcular o valor da conta de luz?
 A aliquota é o total de impostos sobre o produto. Ela é calculada por dentro do preço final de acordo com a seguinte fórlula:
-$$
-impostos = PIS+ COFINS + ICMS 
-$$
 
-$$
-aliquota = \frac{impostos} {1 - impostos}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{100}&space;\large&space;impostos=PIS&plus;COFINS&plus;ICMS" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{100}&space;\large&space;impostos=PIS&plus;COFINS&plus;ICMS" title="\large impostos=PIS+COFINS+ICMS" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{100}&space;\large&space;aliquota&space;=&space;\frac{impostos}&space;{1&space;-&space;impostos}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{100}&space;\large&space;aliquota&space;=&space;\frac{impostos}&space;{1&space;-&space;impostos}" title="\large aliquota = \frac{impostos} {1 - impostos}" /></a>
 
 O valor kWh é determinado pelo valor bruto do kWh e sua aliquota:
 
-$$
-preçoKWh = valorBruto * (1 + aliquota)
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{100}&space;\large&space;precoKWh&space;=&space;valorBruto&space;*&space;(1&space;&plus;&space;aliquota)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{100}&space;\large&space;precoKWh&space;=&space;valorBruto&space;*&space;(1&space;&plus;&space;aliquota)" title="\large precoKWh = valorBruto * (1 + aliquota)" /></a>
 
 Para saber o valor total a **pagar** (total), multiplique o total **faturado** em kWh (consumo) pelo valor da aliquota do estado mais a taxa de iluminação pública COSIP.
 
-$$
-total = (consumo * aliquota ) + COSIP
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{100}&space;\large&space;total&space;=&space;(consumo&space;*&space;aliquota&space;)&space;&plus;&space;COSIP" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{100}&space;\large&space;total&space;=&space;(consumo&space;*&space;aliquota&space;)&space;&plus;&space;COSIP" title="\large total = (consumo * aliquota ) + COSIP" /></a>
 
 ### Como calcular o consumo em kWh dado o valor da conta?
 
-$$
-consumo = \frac{(total - COSIP )}{ aliquota}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{100}&space;\large&space;consumo&space;=&space;\frac{(total&space;-&space;COSIP&space;)}{&space;aliquota}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{100}&space;\large&space;consumo&space;=&space;\frac{(total&space;-&space;COSIP&space;)}{&space;aliquota}" title="\large consumo = \frac{(total - COSIP )}{ aliquota}" /></a>
 
 ### Como definir a faixa de ICMS o consumidor se encontra?
 O ICMS é definido pelo grupo, tipo de tarifa e faixa de consumo.
@@ -109,7 +100,7 @@ A bandeira tarifária representa o custo real da geração de energia no Brasil,
 
 
 ### Como calcular a emissão de CO2 por fonte de energia?
-De acordo com um relatório do Painel Intergovernamental sobre Mudanças Climáticas ([IPCC, 2011](https://en.wikipedia.org/wiki/Life-cycle_greenhouse-gas_emissions_of_energy_sources#cite_note-IPCC_Annex_II-8)), a emissão pode ser calculada de acordo com a tabela a seguir:
+De acordo com um relatório do Painel Intergovernamental sobre Mudanças Climáticas ([IPCC, 2011](https://en.wikipedia.org/wiki/Life-cycle_greenhouse-gas_emissions_of_energy_sources#2011_IPCC_aggregated_results_of_the_available_literature)), a emissão pode ser calculada de acordo com a tabela a seguir:
 
 |       Fonte        | g CO2/kWh |
 | :----------------: | :-------: |
