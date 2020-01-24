@@ -14,14 +14,20 @@ function createGroup(groupData, gross_value, pisCofins) {
 // Given the bill value and the group, search which is its range
 // and returns consumption, icms and cosip
 function getInfo(bill, group) {
-  for (const range of group) {
+  let consumption = null;
+  let icms = null;
+  let cosip = null;
+
+  group.forEach(range => {
     if (bill >= range.minBill && bill < range.maxBill) {
       let partialBill = bill - range.cosip;
-      const consumption = partialBill / range.priceKwh;
-
-      return [consumption, range.icms, range.cosip];
+      consumption = partialBill / range.priceKwh;
+      icms = range.icms;
+      cosip = range.cosip;
     }
-  }
+  });
+
+  return [consumption, icms, cosip];
 }
 
 // Get user source and consumption and returns
