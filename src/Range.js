@@ -1,11 +1,18 @@
 class Range {
-  constructor(minConsumption, maxConsumption, icms, cosip) {
+  constructor({
+    minConsumption,
+    maxConsumption,
+    icms,
+    cosip,
+    gross_value,
+    pisCofins
+  }) {
     this.minConsumption = minConsumption;
     this.maxConsumption = maxConsumption;
     this.icms = icms;
     this.cosip = cosip;
-    this.gross_value = 0.5572;
-    this.pisCofins = 0.05;
+    this.gross_value = gross_value;
+    this.pisCofins = pisCofins;
     this.aliquot = this.getAliquot();
     this.priceKwh = this.getPriceKwh();
     this.minBill = this.getBill(this.minConsumption);
