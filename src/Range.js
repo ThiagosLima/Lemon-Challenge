@@ -4,14 +4,14 @@ class Range {
     maxConsumption,
     icms,
     cosip,
-    gross_value,
+    grossValue,
     pisCofins
   }) {
     this.minConsumption = minConsumption;
     this.maxConsumption = maxConsumption;
     this.icms = icms;
     this.cosip = cosip;
-    this.gross_value = gross_value;
+    this.grossValue = grossValue;
     this.pisCofins = pisCofins;
     this.aliquot = this.getAliquot();
     this.priceKwh = this.getPriceKwh();
@@ -25,7 +25,7 @@ class Range {
   }
 
   getPriceKwh() {
-    return this.gross_value * (1 + this.aliquot);
+    return this.grossValue * (1 + this.aliquot);
   }
 
   getBill(consumption) {

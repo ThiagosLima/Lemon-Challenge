@@ -1,11 +1,11 @@
 const Range = require("./Range");
 
 // Define ranges of a group
-function createGroup(groupData, gross_value, pisCofins) {
+function createGroup(groupData, grossValue, pisCofins) {
   let group = [];
 
   groupData.forEach(element => {
-    group.push(new Range({ ...element, gross_value, pisCofins }));
+    group.push(new Range({ ...element, grossValue, pisCofins }));
   });
 
   return group;

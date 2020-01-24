@@ -10,11 +10,11 @@ const rl = readline.createInterface({
 rl.question("Insira o valor da sua conta: ", answer => {
   const bill = Number(answer);
 
-  gross_value = 0.5572;
-  pisCofins = 0.05;
+  const grossValue = 0.5572;
+  const pisCofins = 0.05;
   const groupB1default = lemon.createGroup(
     b1DefaultData,
-    gross_value,
+    grossValue,
     pisCofins
   );
 
