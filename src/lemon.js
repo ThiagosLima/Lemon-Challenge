@@ -1,7 +1,6 @@
 const Range = require("./Range");
 
 // Define ranges of a group
-// Each range has (minConsumption, maxConsumption, icms, cosip)
 function createGroup(groupData, gross_value, pisCofins) {
   let group = [];
 
